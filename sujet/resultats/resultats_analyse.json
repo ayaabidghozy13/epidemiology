@@ -1,0 +1,117 @@
+{
+  "effectif_total": 10000,
+  "effectifs_par_hopital": {
+    "A": 3925,
+    "B": 3497,
+    "C": 2578
+  },
+  "lignes_identifiant_duplique": 0,
+  "valeurs_hors_bornes_mises_manquantes": {
+    "age_years": 0,
+    "weight_kg": 5,
+    "height_cm": 0,
+    "sbp_mmhg": 30,
+    "creatinine_mg_dl": 0,
+    "crp_mg_l": 0,
+    "los_reported_days": 0
+  },
+  "dates_incoherentes_ou_manquantes": 2526,
+  "manquants_pct": {
+    "readmit30": 3.97,
+    "age_years": 3.52,
+    "sex": 4.15,
+    "diabetes": 0.0,
+    "los_days": 25.26,
+    "smoking": 3.77,
+    "icu": 3.99,
+    "sbp_mmhg": 4.34,
+    "creatinine_mg_dl": 3.89,
+    "crp_mg_l": 4.1
+  },
+  "issues_observees_n": 9603,
+  "taux_rehospitalisation_pct": 8.38,
+  "taux_par_hopital": {
+    "A": {
+      "n": 3816,
+      "taux_pct": 8.31
+    },
+    "B": {
+      "n": 3357,
+      "taux_pct": 8.91
+    },
+    "C": {
+      "n": 2430,
+      "taux_pct": 7.78
+    }
+  },
+  "taux_selon_diabete": {
+    "0": {
+      "n": 7603,
+      "readmissions": 612,
+      "taux_pct": 8.05
+    },
+    "1": {
+      "n": 2000,
+      "readmissions": 193,
+      "taux_pct": 9.65
+    }
+  },
+  "duree_selon_rehospitalisation": {
+    "0": {
+      "n": 6596,
+      "moyenne_jours": 12.12,
+      "mediane_jours": 4.0
+    },
+    "1": {
+      "n": 614,
+      "moyenne_jours": 9.78,
+      "mediane_jours": 4.0
+    }
+  },
+  "modele_logistique": {
+    "n_cas_complets": 6501,
+    "odds_ratios": {
+      "const": 0.106,
+      "age_years": 0.997,
+      "diabetes": 1.205,
+      "los_days": 0.997,
+      "sex_M": 1.043,
+      "icu": 1.064
+    },
+    "IC95_OR": {
+      "const": [
+        0.075,
+        0.148
+      ],
+      "age_years": [
+        0.992,
+        1.002
+      ],
+      "diabetes": [
+        0.98,
+        1.482
+      ],
+      "los_days": [
+        0.994,
+        1.001
+      ],
+      "sex_M": [
+        0.875,
+        1.243
+      ],
+      "icu": [
+        0.805,
+        1.408
+      ]
+    },
+    "p_values": {
+      "const": 0.0,
+      "age_years": 0.24885,
+      "diabetes": 0.07693,
+      "los_days": 0.13844,
+      "sex_M": 0.63955,
+      "icu": 0.66175
+    },
+    "note": "OR ajustés exploratoires sur cas complets; modèle non causal et potentiellement limité par les données manquantes."
+  }
+}

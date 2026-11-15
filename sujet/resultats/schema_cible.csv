@@ -1,0 +1,23 @@
+variable,type_unite,definition_regle
+patient_id,texte,Identifiant d'origine; l'unicité inter-hôpitaux n'est pas garantie
+hospital,catégorie A/B/C,Établissement source
+admission_date,date ISO,Date d'admission harmonisée
+discharge_date,date ISO,Date de sortie harmonisée
+age_years,années,Âge; hors 18–110 mis manquant
+sex,M/F,Sexe harmonisé; autres modalités manquantes
+weight_kg,kg,Poids converti en kilogrammes
+height_cm,cm,Taille convertie en centimètres
+bmi_kg_m2,kg/m²,IMC calculé à partir du poids et de la taille
+smoking,0/1,"Tabagisme : 0 non, 1 oui, NA inconnu"
+diabetes,0/1,"Diabète : 0 non, 1 oui, NA inconnu"
+hypertension,0/1,"HTA : 0 non, 1 oui, NA inconnu"
+icu,0/1,Passage en soins intensifs
+los_days,jours,Durée calculée : date de sortie moins date d'admission
+los_reported_days,jours,"Durée fournie par la source, conservée pour audit"
+readmit30,0/1,Réhospitalisation à 30 jours selon la source
+in_hospital_death,0/1,Décès durant l'hospitalisation
+diagnosis_raw,texte,Diagnostic original conservé
+sbp_mmhg,mmHg,Pression artérielle systolique
+creatinine_mg_dl,mg/dL,Créatinine
+crp_mg_l,mg/L,CRP
+duplicate_patient_id,booléen,Identifiant répété dans le fichier combiné
